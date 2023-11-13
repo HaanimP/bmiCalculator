@@ -7,16 +7,16 @@ button.addEventListener('click', () =>{
     let height_status=false, weight_status=false;
 
     if(height === '' || isNaN(height) || (height <= 0)){
-        document.getElementById(height_error).innerHTML = 'Please provide a valid height';
+        document.getElementById('height_error').innerHTML = 'Please provide a valid height';
     }else{
-        document.getElementById(height_error).innerHTML = '';
+        document.getElementById('height_error').innerHTML = '';
         height_status=true;
     }
 
     if(weight === '' || isNaN(weight) || (weight <= 0)){
-        document.getElementById(weight_error).innerHTML = 'Please provide a valid weight';
+        document.getElementById('weight_error').innerHTML = 'Please provide a valid weight';
     }else{
-        document.getElementById(weight_error).innerHTML = '';
+        document.getElementById('weight_error').innerHTML = '';
         weight_status=true;
     }
 
